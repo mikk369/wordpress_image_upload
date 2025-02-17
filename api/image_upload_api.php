@@ -44,7 +44,6 @@ add_action('rest_api_init', function() {
 
 // Upload menüü image 
 function upload_image_callback() {
-    error_log(print_r($_FILES, true));
 
     if (empty($_FILES['file'])) {
         return new WP_Error('no_file', 'No file uploaded.', ['status' => 400]);
