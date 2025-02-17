@@ -64,11 +64,6 @@ function react_image_upload_enqueue_scripts($hook) {
     } else {
         error_log('Manifest file not found at: ' . $manifest_file);
     }
-
-    // Optionally, localize data like REST API URLs for React to use
-    // wp_localize_script('react-image-upload-js', 'uploadData', [
-    //     'upload_url' => esc_url(rest_url('my_namespace/v1/upload-image'))
-    // ]);
 }
 
 // Enqueue React and build assets
